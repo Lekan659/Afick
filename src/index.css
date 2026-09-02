@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@source "./**/*.{js,ts,jsx,tsx}";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --color-forest: #17352C;
+  --color-pine: #244A3B;
+  --color-brass: #C1913D;
+  --color-clay: #8B4A35;
+  --color-mist: #EEF1EC;
+  --color-ink: #202522;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; min-width: 320px; background: #F7F8F5; color: #202522; font-family: "Manrope", sans-serif; }
+  button, input, select, textarea { font: inherit; }
+  button, summary, a { -webkit-tap-highlight-color: transparent; }
+  a, button, input, select, textarea { outline-color: #C1913D; }
+  :focus-visible { outline: 2px solid #C1913D; outline-offset: 3px; }
+}
+
+.font-display { font-family: "Instrument Serif", Georgia, serif; }
+.form-control { display:block; width:100%; min-height:48px; border:1px solid #AEB8B1; background:#F7F8F5; padding:12px 14px; color:#202522; font-weight:500; }
+.form-control:focus { border-color:#8B4A35; outline:2px solid color-mix(in srgb,#C1913D 35%,transparent); outline-offset:1px; }
+.form-control[aria-invalid="true"] { border-color:#9B352C; background:#FFF8F6; }
+.hero-enter { animation: hero-enter .75s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes hero-enter { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-enter{animation:none}}
