@@ -26,7 +26,7 @@ export function HomePage() {
     <section className="relative overflow-hidden bg-[#17352C] text-white">
       <div className="mx-auto grid min-h-[690px] max-w-[1440px] lg:grid-cols-[1.02fr_.98fr]">
         <div className="hero-enter flex flex-col justify-center px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-          {/* <p className="mb-6 flex items-center gap-3 text-sm font-bold text-[#D3AC67]"><span className="h-px w-10 bg-[#C1913D]"/>Real estate and property services across Nigeria</p> */}
+          <p className="mb-6 flex items-center gap-3 text-sm font-bold text-[#D3AC67]"><span className="h-px w-10 bg-[#C1913D]"/>Real estate and property services across Nigeria</p>
           <h1 className="max-w-3xl font-display text-5xl leading-[.98] sm:text-7xl lg:text-[82px]">Property solutions built around lasting value.</h1>
           <p className="mt-7 max-w-xl text-lg leading-8 text-white/72">Mafick Integrated provides reliable, professional support across the property lifecycle—from sourcing, marketing, buying and selling to management, maintenance, renovation and development coordination.</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row"><WhatsAppButton label="Discuss a property need"/><Link className="inline-flex min-h-11 items-center justify-center border border-white/35 px-5 py-3 font-bold hover:bg-white hover:text-[#17352C]" to="/services">Explore our services</Link></div>

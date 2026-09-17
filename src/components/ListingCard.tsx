@@ -11,6 +11,7 @@ export function ListingCard({ listing }: {listing:Listing}) {
       <div className="relative aspect-[4/3] overflow-hidden bg-[#DDE3DE]">
         <img className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]" src={listing.images[0]} alt={listing.title} loading="lazy" />
         <span className="absolute left-3 top-3 bg-[#17352C] px-3 py-1.5 text-xs font-bold text-white">{listing.status}</span>
+        {listing.imageNote&&<span className="absolute bottom-3 left-3 bg-black/70 px-2.5 py-1 text-[10px] font-bold text-white">Representative image</span>}
       </div>
     </Link>
     <div className="pt-5">

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Menu, Phone, X } from 'lucide-react';
 import { FloatingWhatsApp, WhatsAppButton } from './WhatsAppButton';
+import { SOCIAL_LINKS } from '../lib/constants';
 
 const nav = [['/','Home'],['/services','Services'],['/listings','Listings'],['/about','About'],['/blog','Guides'],['/contact','Contact']];
 
@@ -23,10 +24,11 @@ export function Layout() {
     </header>
     <main key={location.pathname}><Outlet/></main>
     <footer className="bg-[#112920] text-white">
-      <div className="mx-auto grid max-w-[1440px] gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.2fr_.8fr_.8fr] lg:px-12">
+      <div className="mx-auto grid max-w-[1440px] gap-10 px-5 py-14 sm:grid-cols-2 sm:px-8 lg:grid-cols-[1.2fr_.7fr_.8fr_.7fr] lg:px-12">
         <div><p className="font-display text-4xl">Property solutions, coordinated professionally.</p><p className="mt-4 max-w-md leading-7 text-white/65">Real estate, property management, maintenance, development support and advisory services across Nigeria.</p><a className="mt-5 flex items-center gap-2 font-bold text-[#D3AC67]" href="tel:+2348158475918"><Phone size={17}/>+234 815 847 5918</a></div>
         <div><p className="mb-4 font-bold text-[#D3AC67]">Explore</p>{nav.slice(1).map(([to,label])=><Link key={to} to={to} className="mb-3 block text-sm text-white/70 hover:text-white">{label}</Link>)}</div>
         <div><p className="mb-4 font-bold text-[#D3AC67]">Core services</p><p className="mb-3 text-sm text-white/70">Property marketing & transactions</p><p className="mb-3 text-sm text-white/70">Property & facility management</p><p className="text-sm text-white/70">Maintenance, renovation & development</p></div>
+        <div><p className="mb-4 font-bold text-[#D3AC67]">Follow Mafick</p>{SOCIAL_LINKS.map(item=><a key={item.label} href={item.href} target="_blank" rel="noreferrer" className="mb-3 block text-sm text-white/70 hover:text-white">{item.label}</a>)}</div>
       </div>
       <div className="border-t border-white/10 px-5 py-5 text-center text-xs text-white/45">© {new Date().getFullYear()} Mafick Integrated Nig. Ltd. All rights reserved.</div>
     </footer>

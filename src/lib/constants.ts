@@ -9,3 +9,10 @@ export const BUSINESS = {
   name: 'Mafick Integrated',
   registration: 'Mafick Integrated Nig. Ltd. — registered real estate and property services company in Nigeria.',
 };
+
+export const SOCIAL_LINKS = [
+  { label: 'Instagram', href: 'https://www.instagram.com/mafick_24' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@mayfick' },
+  { label: 'X', href: 'https://x.com/Mayfick_24' },
+  { label: 'Threads', href: 'https://www.threads.com/@mafick_24' },
+];
