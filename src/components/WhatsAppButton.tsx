@@ -8,5 +8,5 @@ export function WhatsAppButton({ message, label='Chat with our team', className=
 }
 
 export function FloatingWhatsApp() {
-  return <a className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#1f8f54] text-white shadow-[0_8px_24px_rgba(20,48,39,.28)] transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C1913D]" href={whatsappUrl()} target="_blank" rel="noreferrer" aria-label="Chat with Mafick Integrated on WhatsApp"><MessageCircle size={25} /></a>;
+  return <a className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#1f8f54] text-white shadow-[0_8px_24px_rgba(20,48,39,.28)] transition hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C1913D]" href={whatsappUrl()} target="_blank" rel="noreferrer" aria-label="Chat with Mayfick Integrated on WhatsApp"><MessageCircle size={25} /></a>;
 }

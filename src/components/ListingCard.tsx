@@ -21,7 +21,7 @@ export function ListingCard({ listing }: {listing:Listing}) {
       <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 border-y border-[#D5DBD6] py-3 text-xs font-semibold text-[#68736D]">{specs.slice(0,3).map((spec) => <span key={spec}>{spec}</span>)}</div>
       <div className="mt-4 flex flex-col gap-2 sm:flex-row">
         <Link className="inline-flex min-h-11 flex-1 items-center justify-center border border-[#17352C] px-4 text-sm font-bold text-[#17352C] hover:bg-[#17352C] hover:text-white" to={`/listings/${listing.slug}`}>View details</Link>
-        <a className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 bg-[#1f8f54] px-4 text-sm font-bold text-white hover:bg-[#187746]" href={whatsappUrl(`Hello Mafick Integrated, we would like more information about ${listing.title}. Please share the current availability and inspection details.`)} target="_blank" rel="noreferrer"><MessageCircle size={16}/>Inquire on WhatsApp</a>
+        <a className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 bg-[#1f8f54] px-4 text-sm font-bold text-white hover:bg-[#187746]" href={whatsappUrl(`Hello Mayfick Integrated, we would like more information about ${listing.title}. Please share the current availability and inspection details.`)} target="_blank" rel="noreferrer"><MessageCircle size={16}/>Inquire on WhatsApp</a>
       </div>
     </div>
   </article>;

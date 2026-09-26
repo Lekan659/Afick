@@ -1,4 +1,4 @@
-# Mafick Integrated website
+# Mayfick Integrated website
 
 A plain React + TypeScript + Tailwind CSS + Vite website. There is no Wrangler, Cloudflare runtime or sign-in dependency.
 
@@ -21,7 +21,7 @@ Open the URL Vite prints, normally `http://localhost:5173`.
 - Nigerian property imagery: `public/images/`
 - Main styles and palette: `src/index.css`
 
-The included listings and testimonials are demonstration content and must be replaced or approved before launch. Company services, vision, mission and communication principles are based on the supplied Mafick Integrated business profile.
+The included listings and testimonials are demonstration content and must be replaced or approved before launch. Company services, vision, mission and communication principles are based on the supplied Mayfick Integrated business profile.
 
 ## Routes
 
